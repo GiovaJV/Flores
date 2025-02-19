@@ -4,40 +4,39 @@ var lyrics = document.querySelector("#lyrics");
 
 // Array de objetos que contiene cada línea y su tiempo de aparición en segundos
 var lyricsData = [
-  { text: "At the time", time: 15 },
-  { text: "The whisper of birds", time: 18 },
-  { text: "Lonely before the sun cried", time: 27 },
-  { text: "Fell from the sky", time: 32 },
-  { text: "Like water drops", time: 33 },
-  { text: "Where I'm now? I don't know why", time: 41 },
-  { text: "Nice butterflies in my hands", time: 47 },
-  { text: "Too much light for twilight", time: 54 },
-  { text: "In the mood for the flowers love", time: 59 },
-  { text: "That vision", time: 67 },
-  { text: "Really strong, blew my mind", time: 72 },
-  { text: "Silence Let me see what it was", time: 78 },
-  { text: "I only want to live in clouds", time: 83 },
-  { text: "Where I'm now? I don't know why", time: 91 },
-  { text: "Nice butterflies in my hands", time: 97 },
-  { text: "Too much light for twilight", time: 104 },
-  { text: "In the mood for the flowers love", time: 108 },
-  { text: "At the time", time: 144 },
-  { text: "The whisper of birds", time: 148 },
-  { text: "Lonely before the sun cried", time: 153 },
-  { text: "Fell from the sky", time: 158 },
-  { text: "Like water drops", time: 164 },
-  { text: "Where I'm now? I don't know why", time: 169 },
-  { text: "Nice butterflies in my hands", time: 176 },
-  { text: "Too much light for twilight", time: 183 },
-  { text: "In the mood for the flowers", time: 188 },
-  { text: "Love.", time: 140 },
+  { text: "You leapt from crumbling bridges", time: 34 },
+  { text: "Watching cityscapes turn to dust", time: 37 },
+  { text: "Filming helicopters crashing in the ocean", time: 44 },
+  { text: "From way above", time: 49 },
+  { text: "Got the music in you, baby, tell me why", time: 55 },
+  { text: "Got the music in you, baby, tell me why", time: 59 },
+  { text: "You've been locked in here forever", time: 65 },
+  { text: "And you just can't say goodbye", time: 68 },
+  { text: "Kisses on the foreheads of the lovers", time: 76 },
+  { text: "Wrapped in your arms", time: 79 },
+  { text: "You've been hiding them in hollowed out pianos", time: 85 },
+  { text: "Left in the dark", time: 89 },
+  { text: "Got the music in you, baby, tell me why", time: 96 },
+  { text: "Got the music in you, baby, tell me why", time: 100 },
+  { text: "You've been locked in here forever", time: 106 },
+  { text: "And you just can't say goodbye", time: 109 },
+  { text: "Your lips, My lips", time: 117 },
+  { text: "Apocalypse.", time: 120 },
+  { text: "Your lips, My lips", time: 128 },
+  { text: "Apocalypse.", time: 131 },
+  { text: "Go and sneak us through the rivers", time: 136 },
+  { text: "Flood is rising up on your knees", time: 139 },
+  { text: "Oh, please", time: 144 },
+  { text: "COME OUT AND HAUNT ME", time: 147 },
+  { text: "I know you want me", time: 150 },
+  { text: "Come out and haunt mee", time: 153 },
 ];
 
 // Animar las letras
 function updateLyrics() {
   var time = Math.floor(audio.currentTime);
   var currentLine = lyricsData.find(
-    (line) => time >= line.time && time < line.time + 6
+    (line) => time >= line.time && time < line.time + 3
   );
 
   if (currentLine) {
